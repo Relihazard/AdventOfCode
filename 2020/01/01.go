@@ -42,7 +42,6 @@ func main() {
         curr_sum := 2020 - value
 
         for _, value2 := range a[i + 1:] {
-
             if m[curr_sum - value2] {
                 fmt.Printf("%d\n", value * value2 * (curr_sum - value2))
                 return
