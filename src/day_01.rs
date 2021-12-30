@@ -14,7 +14,11 @@ pub fn part_2(input: &str) -> u64 {
     triplets.windows(2).fold(0, |total, window| {
         let prev_sum: u64 = window[0].iter().sum();
         let curr_sum: u64 = window[1].iter().sum();
-        if curr_sum > prev_sum { total + 1 } else { total }  
+        if curr_sum > prev_sum {
+            total + 1
+        } else {
+            total
+        }
     })
 }
 

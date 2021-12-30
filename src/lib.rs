@@ -1,12 +1,14 @@
 use std::{env, fs};
 
 mod day_01;
+mod day_02;
 
 pub type Day = fn(&str) -> u64;
 
 pub fn get_day(day: u32) -> (Day, Day) {
     match day {
         1 => (day_01::part_1, day_01::part_2),
+        2 => (day_02::part_1, day_02::part_2),
         _ => panic!("Unknown day: {}", day),
     }
 }
