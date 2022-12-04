@@ -19,7 +19,7 @@ pub fn get_day(year: u32, day: u32) -> (Day, Day) {
 
     let twenty_two: [(Day, Day); 5] = [
         (twenty_two::day_01::part_1, twenty_two::day_01::part_2),
-        (twenty_two::day_01::part_1, twenty_two::day_01::part_2),
+        (twenty_two::day_02::part_1, twenty_two::day_02::part_2),
         (twenty_two::day_01::part_1, twenty_two::day_01::part_2),
         (twenty_two::day_01::part_1, twenty_two::day_01::part_2),
         (twenty_two::day_01::part_1, twenty_two::day_01::part_2),

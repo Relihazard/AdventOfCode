@@ -109,4 +109,21 @@ mod twenty_two {
             assert_eq!(45000, get_day(YEAR, DAY).1(&get_test_input(YEAR, DAY)));
         }
     }
+
+    #[cfg(test)]
+    mod day_02 {
+        use super::*;
+
+        const DAY: u32 = 2;
+
+        #[test]
+        fn test_part_1() {
+            assert_eq!(15, get_day(YEAR, DAY).0(&get_test_input(YEAR, DAY)));
+        }
+
+        #[test]
+        fn test_part_2() {
+            assert_eq!(12, get_day(YEAR, DAY).1(&get_test_input(YEAR, DAY)));
+        }
+    }
 }
